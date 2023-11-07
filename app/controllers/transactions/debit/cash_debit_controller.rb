@@ -2,8 +2,8 @@ class Transactions::Debit::CashDebitController < ApplicationController
 
 
     def show
-        bank_debit = CashDebit.where(id: params[:id])
-        render json: bank_debit, status: :ok
+        cash_debit = CashDebit.where(id: params[:id])
+        render json: cash_debit, status: :ok
     end
 
     def create
